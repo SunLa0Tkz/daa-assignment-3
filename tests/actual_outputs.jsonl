@@ -1,0 +1,33 @@
+{"name": "ping", "actual": {"status": "ready"}}
+{"name": "spec_dsu_example", "actual": {"states": [[3, 2], [2, 3], [2, 3], [2, 3]]}}
+{"name": "spec_kruskal_example", "actual": {"cost": 5, "edge_ids": [1, 2], "components": 2}}
+{"name": "spec_prim_example", "actual": {"cost": 5, "edge_ids": [1, 2], "components": 2}}
+{"name": "spec_scc_example", "actual": {"component": [0, 0, 1, 2], "condensation": [[0, 1], [1, 2]]}}
+{"name": "spec_topo_example", "actual": {"acyclic": true, "order": [1, 0, 2, 3]}}
+{"name": "spec_dag_example", "actual": {"acyclic": true, "distance": [0, 3, -4, 0, null], "parent_edge": [-1, 0, 2, 3, -1]}}
+{"name": "kruskal_total_beyond_32bit", "actual": {"cost": 3000000000, "edge_ids": [0, 1, 2], "components": 1}}
+{"name": "dag_total_beyond_32bit", "actual": {"acyclic": true, "distance": [0, -1000000000, -2000000000, -3000000000], "parent_edge": [-1, 0, 1, 2]}}
+{"name": "dsu_repeated_unions", "actual": {"states": [[2, 2], [2, 2], [2, 2]]}}
+{"name": "dsu_empty", "actual": {"states": []}}
+{"name": "dsu_basic", "actual": {"states": [[4, 2], [3, 3], [3, 3], [2, 3], [1, 5]]}}
+{"name": "dsu_self_union", "actual": {"states": [[3, 1]]}}
+{"name": "kruskal_empty", "actual": {"cost": 0, "edge_ids": [], "components": 0}}
+{"name": "kruskal_isolates", "actual": {"cost": 5, "edge_ids": [0], "components": 3}}
+{"name": "kruskal_loop_parallel_negative", "actual": {"cost": 1, "edge_ids": [2, 3], "components": 1}}
+{"name": "kruskal_ties", "actual": {"cost": 2, "edge_ids": [0, 1], "components": 1}}
+{"name": "prim_forest_restart", "actual": {"cost": -2, "edge_ids": [1, 2, 3], "components": 3}}
+{"name": "prim_loop_parallel_negative", "actual": {"cost": 1, "edge_ids": [2, 3], "components": 1}}
+{"name": "prim_empty", "actual": {"cost": 0, "edge_ids": [], "components": 0}}
+{"name": "scc_basic", "actual": {"component": [0, 0, 0, 1, 2], "condensation": [[0, 1], [1, 2]]}}
+{"name": "scc_loop_parallel", "actual": {"component": [0, 1, 2], "condensation": [[0, 1], [1, 2]]}}
+{"name": "scc_empty", "actual": {"component": [], "condensation": []}}
+{"name": "topo_diamond", "actual": {"acyclic": true, "order": [0, 2, 1, 3]}}
+{"name": "topo_cycle", "actual": {"acyclic": false, "order": []}}
+{"name": "topo_self_loop", "actual": {"acyclic": false, "order": []}}
+{"name": "topo_isolates", "actual": {"acyclic": true, "order": [2, 1, 0]}}
+{"name": "topo_empty", "actual": {"acyclic": true, "order": []}}
+{"name": "dag_basic", "actual": {"acyclic": true, "distance": [0, 2, 5, 4, null], "parent_edge": [-1, 0, 2, 3, -1]}}
+{"name": "dag_cycle_unreachable", "actual": {"acyclic": false, "distance": [], "parent_edge": []}}
+{"name": "dag_ties_parallel", "actual": {"acyclic": true, "distance": [0, 5, 6], "parent_edge": [-1, 0, 3]}}
+{"name": "dag_single_vertex", "actual": {"acyclic": true, "distance": [0], "parent_edge": [-1]}}
+{"name": "dag_source_in_middle", "actual": {"acyclic": true, "distance": [null, 0, -3], "parent_edge": [-1, -1, 1]}}
